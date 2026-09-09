@@ -1,0 +1,12 @@
+# Qiskit 1.x / 2.x Track Dependencies
+qiskit>=1.2.0,<2.0.0
+qiskit-aer>=0.15.0
+qiskit-algorithms>=0.3.0
+qiskit-ibm-runtime>=0.28.0
+numpy>=1.24.0,<2.0.0
+scipy>=1.11.0
+matplotlib>=3.8.0
+networkx>=3.1
+pylatexenc>=2.10
+ipywidgets>=8.1.0
+jupyterlab>=4.0.0

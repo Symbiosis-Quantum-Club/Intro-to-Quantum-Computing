@@ -1,153 +1,134 @@
-# Quantum Computing and QML; a Comprehensive Roadmap
+# Introduction to Quantum Computing and Quantum Machine Learning
+### A Multi-Framework Curriculum: IBM Qiskit, Google Cirq, and Xanadu PennyLane
 
-![License](https://img.shields.io/badge/license-Apache2.0-blue.svg)
-![Version](https://img.shields.io/badge/version-1.0.0-brightgreen.svg)
+[![License: Apache 2.0](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](./LICENSE)
+[![Python Versions](https://img.shields.io/badge/Python-3.10%20%7C%203.11-brightgreen.svg)](https://www.python.org/)
+[![Qiskit Version](https://img.shields.io/badge/Qiskit-1.x%20(Primitives%20V2)-purple.svg)](https://qiskit.org/)
+[![Cirq Version](https://img.shields.io/badge/Cirq-1.4+-yellow.svg)](https://quantumai.google/cirq)
+[![PennyLane Version](https://img.shields.io/badge/PennyLane-0.38+-teal.svg)](https://pennylane.ai/)
 
-
-## Overview:
-
-This repository contains a structured roadmap of **Quantum Computing and Quantum Machine Learning**, designed to guide learners from fundamental concepts to advanced quantum computing techniques. Each project focuses on a key aspect of Qiskit and Cirq, enabling us to build a solid foundation in quantum circuits and algorithms and develop device-level understanding using transpilation, mitigation, and pulse control.
-
-All you need is a fundamental understanding of Python to get started!
-
----
-## What is Qiskit?
-
-- Developed by IBM, Qiskit is the most widely used open-source quantum framework with excellent documentation and community support.  
-- It supports a full-stack workflow: from high-level circuits and algorithms to low-level pulse control.  
-- Qiskit includes domain libraries (Finance, Nature, Machine Learning) that link quantum computing to real-world use cases.
----
-## What is Cirq?
-- An open source quantum framework developed by Google. It's designed for "NISQ" (Noisy Intermediate-Scale Quantum) devices, meaning it gives you fine-grained control over gate placement and timing, which is crucial for experimenting with current quantum hardware.
-
-- Building Quantum Circuits: Cirq lets you design quantum circuits from scratch, choosing specific quantum gates (like Hadamard, CNOT, Rx) and applying them to individual qubits.
-- Simulating Quantum Programs: You can run your quantum circuits on a simulator right on your own computer, allowing you to test and debug your quantum algorithms before trying them on actual quantum hardware.
-
-- Running on Quantum Hardware: Cirq integrates with Google's quantum processors (like Sycamore), enabling you to execute your designed circuits on real quantum computers.
-
----
-## Sequential Project List:
-
-- *0_InitialisingQiskit.ipynb* ;
-
-Introduction to setting up and initializing the Qiskit framework for quantum computing.
-
-- *1__Intro_to_Cirq.ipynb* ;
-
-Introduction to Cirq, a framework for quantum computing developed by Google.
-
-- *2_QiskitRNG.ipynb* ;
-
-Building a random number generator using Qiskit and quantum principles.
-
-- *3_Grovers_Search_Algorithm_and_Applications.ipynb* ;
-  
-Implementation of Grover's search algorithm and its applications in database searching.
-
-- *4_UnderstandingShorsAlgo_inCirq.ipynb* ;
-
-Understanding and implementing Shor's algorithm for integer factorization using Cirq.
-
-- *4_UnderstandingShorsAlgo_inQiskit.ipynb* ;
-  
-Understanding and implementing Shor's algorithm for integer factorization using Qiskit.
-
-- 5.*VQE and its applications.ipynb* ;
-
-Variational Quantum Eigensolver (VQE) and its applications in quantum chemistry.
-
-- *6_LogicalQubits.ipynb* ;
-
-Construction of logical qubits using quantum error correction techniques.
-
-- *7_Solving_MaxCut_using_QAOA.ipynb* ;
-  
-Solving the Max-Cut problem using the Quantum Approximate Optimization Algorithm (QAOA).
-
-- *8_Portfolio_Optimization_with_QAOA.ipynb* ;
-  
-Application of QAOA for optimizing stock portfolios in finance.
-
-- *9_Cirq_Circuit_Transpilation_and_Error_Mitigation.ipynb* ;
-  
-Techniques for circuit transpilation and error mitigation in Cirq.
-
-- *10_BB84Algo_Quantum_Key_Distribution.ipynb* ;
-
-Implementation of the BB84 protocol for secure quantum key distribution.
-
-- *11_Intro to TensorFlowQuantum.ipynb* ;
-  
-Overview of TensorFlow Quantum and its integration with quantum machine learning.
-
-- *12_Intro_To_PennyLane.ipynb* ;
-  
-Introduction to PennyLane, a library for quantum machine learning and differentiable programming.
-
-- *13_Quantum_Machine_Learning_A_Basic_Pipeline.ipynb* ;
-
-A basic pipeline for implementing quantum machine learning algorithms.
----
-
-## Learning Outcomes:
-
-- **Circuit fundamentals** (quantum gates, measurement, entanglement, sampling)
-- **Core quantum algorithms** (Grover’s, Shor’s, QAOA, VQE)
-- **Practical application domains**: chemistry, portfolio finance, and error correction
-- **Hardware awareness**: transpilation, error mitigation, and pulse programming
-- **Public teaching materials**: templates, documentation, and demo code for training
+This repository provides an educational curriculum in quantum computing and quantum machine learning (QML) designed specifically for Python beginners. The curriculum is partitioned into three independent, comprehensive tracks focusing on the industry's primary open-source quantum programming frameworks.
 
 ---
 
-## Learning Framework
+## Architectural Comparison of Frameworks
 
-Each project includes:
-
-- A clear problem statement explaining relevance and context.
-- Jupyter notebooks with annotated explanations.
-- Data visualization (plots, Bloch spheres, performance graphs).
-
----
-## Github Repos You Should Check out:
-- https://github.com/BrianOtieno/quantum-computing/tree/main
-- https://github.com/MonitSharma/Learn-Quantum-Computing-with-Qiskit
-- https://github.com/quantumlib/Cirq
-- https://github.com/PennyLaneAI/qml
-- https://github.com/joydeb1729/Quantum-Computing-With-Cirq
----
-## Foundational QC Textbooks:
-- https://files.batistalab.com/teaching/attachments/chem584/Mosca.pdf ; An Introduction to Quantum Computing
-- https://profmcruz.wordpress.com/wp-content/uploads/2017/08/quantum-computation-and-quantum-information-nielsen-chuang.pdf  ; Quantum Computation and Quantum Information" by Nielsen & Chuang (2000, 2nd ed. 2010)
-- https://arxiv.org/pdf/quant-ph/9812037 ; Quantum Computation by Dorit Aharonov
----
-## Some Insightful Research Papers:
-Introductory Principles
-- https://arxiv.org/pdf/quant-ph/9809016 ; An Introduction to Quantum Computing for Non‑Physicists
-- https://arxiv.org/pdf/2310.10315 ; A Survey on Quantum Machine Learning: Basics, Current Trends, Challenges, Opportunities, and the Road Ahead
-- https://quantum-journal.org/papers/q-2018-08-06-79/pdf/ ; Quantum Computing in the NISQ era and beyond
-
-
-Further Concepts
-- https://arxiv.org/abs/1304.3061 ; A variational eigenvalue solver on a quantum processor
-- https://link.springer.com/article/10.1007/s11569-022-00424-z ; Historical Roots and Seminal Papers of Quantum Technology 2.0
-- https://arxiv.org/abs/1411.4028 ; A Quantum Approximate Optimization Algorithm
-- https://arxiv.org/pdf/1810.03787 ; Quantum Convolutional Neural Networks
-- https://arxiv.org/pdf/2011.01938 ; Power of data in quantum machine learning
-- https://arxiv.org/pdf/1509.04279 ; The theory of variational hybrid quantum-classical algorithms
-
----
-## Getting Started:
-
-To begin your journey into Quantum Programming and Quantum Machine Learning, follow these steps:
-
-1. **Clone the Repository**:
-   ```bash
-   git clone https://github.com/Symbiosis-Quantum-Club/Quantum-Computing-and-QML-a-Comprehensive-Roadmap
-   cd Quantum-Computing-and-QML-a-Comprehensive-Roadmap
-2. `pip install qiskit` (ensure latest 2.x version) along with optional extras (`qiskit-aer`, `qiskit-ibm-runtime`, etc.).
-3. Launch notebooks sequentially, adapting and extending code for learning and demonstration.
+| Framework | Primary Focus | Distinctive Architectural Paradigm | Target Use Case |
+|---|---|---|---|
+| **IBM Qiskit** | Gate-level circuits & cloud hardware | Primitives V2 (`SamplerV2`, `EstimatorV2`) and pass managers | General-purpose quantum algorithms, chemistry, and IBM hardware |
+| **Google Cirq** | NISQ hardware & pulse/moment control | Time-sliced `Moment` architecture and 2D `GridQubit` topologies | Direct hardware control, noise modeling, and Google Sycamore architectures |
+| **Xanadu PennyLane** | Differentiable quantum programming & QML | `@qml.qnode` decorators and parameter-shift differentiation | Variational classifiers, quantum neural networks, and PyTorch/JAX integration |
 
 ---
 
+## Curriculum Overview
 
+Each track contains 15 sequentially structured Jupyter Notebooks progressing from foundational programming concepts to advanced variational algorithms.
 
+### Track 1: IBM Qiskit 1.x / 2.x ([`qiskit/`](./qiskit))
+
+1. **`01_Python_and_Qiskit_Setup.ipynb`**: Python fundamentals, installing Qiskit 1.x, and first circuit construction.
+2. **`02_Single_Qubit_Superposition.ipynb`**: Computational basis states, Hadamard transformation, and statevector inspection.
+3. **`03_Quantum_Gates_and_Rotations.ipynb`**: Pauli operators (X, Y, Z), phase gates (S, T), and arbitrary rotation angles (Rx, Ry, Rz).
+4. **`04_Entanglement_and_Bell_States.ipynb`**: Multi-qubit registers, Controlled-NOT (CNOT) operation, and Bell state preparation.
+5. **`05_Sampling_with_Primitives_V2.ipynb`**: Measurement mechanics, finite-shot sampling, and `StatevectorSampler` with Primitive Unified Blocs (PUBs).
+6. **`06_Visualizing_Quantum_States.ipynb`**: Circuit schematics, Bloch sphere projections, and state density plots.
+7. **`07_Quantum_Random_Number_Generator.ipynb`**: Intrinsic quantum non-determinism, multi-bit sampling, and integer generation.
+8. **`08_Quantum_Teleportation.ipynb`**: Teleportation protocol, Bell basis measurement, and feed-forward state reconstruction.
+9. **`09_Superdense_Coding.ipynb`**: Transmission of two classical bits using a single entangled qubit.
+10. **`10_Deutsch_Jozsa_Algorithm.ipynb`**: Quantum parallelism, black-box oracles, and phase kickback analysis.
+11. **`11_Quantum_Phase_Estimation_and_QFT.ipynb`**: Quantum Fourier Transform decomposition and unitary eigenvalue extraction.
+12. **`12_Grovers_Search_Algorithm.ipynb`**: Unstructured search, oracle construction, and amplitude amplification iterations.
+13. **`13_Shors_Factoring_Algorithm.ipynb`**: Order-finding modular arithmetic and RSA factorization reduction.
+14. **`14_VQE_with_Estimator_V2.ipynb`**: Rayleigh-Ritz variational principle, molecular Hamiltonians, and ground state optimization via `EstimatorV2`.
+15. **`15_QAOA_MaxCut_Optimization.ipynb`**: Combinatorial optimization on graphs using alternating cost and mixer Hamiltonians.
+
+---
+
+### Track 2: Google Cirq 1.4+ ([`cirq/`](./cirq))
+
+1. **`01_Python_and_Cirq_Architecture.ipynb`**: Cirq hardware abstractions, `LineQubit`, `GridQubit`, and `NamedQubit` structures.
+2. **`02_Qubits_Moments_and_Circuits.ipynb`**: Temporal time-slice organization (`Moment`) and circuit assembly patterns.
+3. **`03_Single_Qubit_Gates_and_Operations.ipynb`**: Fractional gate powers, phased operators, and unitary matrix conversions.
+4. **`04_Multi_Qubit_Gates_and_Entanglement.ipynb`**: Two-qubit gates (CNOT, CZ, SWAP, ISWAP) and state representations.
+5. **`05_Simulating_Circuits_and_Sampling.ipynb`**: Pure-state simulation (`simulate()`) versus shot-based hardware execution (`run()`).
+6. **`06_Parameterized_Circuits_and_Sweeps.ipynb`**: Symbolic parameters with SymPy and multi-dimensional parameter sweeps.
+7. **`07_Quantum_Teleportation_in_Cirq.ipynb`**: Classical feed-forward conditioning and fidelity verification in Cirq.
+8. **`08_Grovers_Algorithm_in_Cirq.ipynb`**: Modular oracle sub-circuits and diffusion moments.
+9. **`09_Quantum_Fourier_Transform.ipynb`**: Recursive QFT implementation and automated circuit inversion.
+10. **`10_Simulating_Noisy_Quantum_Channels.ipynb`**: Bit-flip, phase-flip, and depolarizing noise with `DensityMatrixSimulator`.
+11. **`11_Quantum_Error_Detection_Bit_Flip.ipynb`**: Three-qubit repetition code, ancilla syndrome extraction, and error correction.
+12. **`12_Compiling_for_Google_Hardware.ipynb`**: Grid connectivity constraints, Sycamore gate set decomposition, and circuit optimization passes.
+13. **`13_QAOA_Optimization_in_Cirq.ipynb`**: Graph problem formulation and alternating unitary dynamics in Cirq.
+14. **`14_Variational_Algorithms_with_SciPy.ipynb`**: Hybrid quantum-classical optimization interfacing Cirq with SciPy solvers.
+15. **`15_Quantum_Supremacy_and_XEB_Intuition.ipynb`**: Random circuit sampling benchmarks and Cross-Entropy Benchmarking (XEB) principles.
+
+---
+
+### Track 3: Xanadu PennyLane 0.38+ ([`pennylane/`](./pennylane))
+
+1. **`01_Python_and_PennyLane_Basics.ipynb`**: Differentiable quantum programming paradigms and framework architecture.
+2. **`02_Devices_QNodes_and_Circuits.ipynb`**: Device initializations and the `@qml.qnode` functional decorator.
+3. **`03_Quantum_Observables_and_Measurements.ipynb`**: Expectation values (`expval`), variances (`var`), probabilities (`probs`), and sampling.
+4. **`04_Quantum_Gradients_and_Parameter_Shift.ipynb`**: Analytic quantum gradients via the parameter-shift rule and `qml.grad`.
+5. **`05_Circuit_Optimization_with_Gradient_Descent.ipynb`**: Gradient descent and Adam optimization of parameterized circuits.
+6. **`06_Encoding_Classical_Data_into_Qubits.ipynb`**: Classical-to-quantum embeddings: Basis, Angle, and Amplitude embeddings.
+7. **`07_Variational_Quantum_Classifier.ipynb`**: Complete binary classifier pipeline using strongly entangling layers.
+8. **`08_Hybrid_Quantum_Neural_Networks_PyTorch.ipynb`**: Direct integration of QNodes into PyTorch architectures using `TorchLayer`.
+9. **`09_Quantum_Kernel_Methods_and_QSVM.ipynb`**: Quantum feature spaces, kernel matrices, and scikit-learn Support Vector Machines.
+10. **`10_Quantum_Convolutional_Neural_Networks.ipynb`**: Hierarchical quantum convolutional and pooling layers for dimensional reduction.
+11. **`11_Solving_MaxCut_with_PennyLane_QAOA.ipynb`**: Automated cost and mixer Hamiltonian generation with `qml.qaoa`.
+12. **`12_VQE_for_Molecular_Chemistry.ipynb`**: Electronic structure calculations and molecular ground state energy estimation.
+13. **`13_Barren_Plateaus_and_Trainability.ipynb`**: Gradient variance scaling in deep parameterized circuits and mitigation techniques.
+14. **`14_Quantum_Generative_Adversarial_Networks.ipynb`**: Quantum generator and classical discriminator architectures for distribution learning.
+15. **`15_End_to_End_QML_Pipeline.ipynb`**: Capstone classification pipeline: feature scaling, PCA, training, and classical benchmarking.
+
+---
+
+## Environment Configuration & Setup
+
+Python 3.10 or 3.11 is recommended.
+
+### Unified Environment
+```bash
+# Create and activate virtual environment
+python -m venv .venv
+# On Windows:
+.venv\Scripts\activate
+# On Linux/macOS:
+source .venv/bin/activate
+
+# Install all dependencies
+pip install -r requirements.txt
+
+# Launch JupyterLab
+jupyter lab
+```
+
+### Track-Specific Environments
+To install dependencies for a single framework:
+```bash
+# IBM Qiskit:
+pip install -r qiskit/requirements-qiskit.txt
+
+# Google Cirq:
+pip install -r cirq/requirements-cirq.txt
+
+# Xanadu PennyLane:
+pip install -r pennylane/requirements-pennylane.txt
+```
+
+---
+
+## Automated Test Suite
+
+To verify that all 45 notebooks execute without warnings or errors:
+```bash
+python scripts/run_notebook_tests.py
+```
+
+---
+
+## License
+
+This project is licensed under the Apache 2.0 License. See the [LICENSE](./LICENSE) file for details.
